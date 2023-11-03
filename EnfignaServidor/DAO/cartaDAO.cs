@@ -10,6 +10,7 @@ namespace EnfignaServidor.DAO
 {
     internal class cartaDAO
     {
+        /*FUNCIONA?????? */
         public Carta cartasObtenidas = new Carta();
 
         public List<Carta> recuperarCartas() { 
