@@ -47,7 +47,6 @@ namespace EnfignaServidor.DAO
             catch (Exception ex)
             {
                 MessageBox.Show("la verda no funciona tu recuperacion de cartas, error.  " + ex);
-
             }
 
             return cartasRecuperadas;
