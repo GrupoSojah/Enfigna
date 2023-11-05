@@ -13,8 +13,9 @@ namespace EnfignaServidor.DAO
     internal class cartaDAO
     {
         conexionBD conexion = new conexionBD();
-
+        
         //recuperaIdMazos por id de jugador
+
         public ArrayList recuperarMazos(int idJugador)
         {
             ArrayList mazosRecuperados = new ArrayList();
@@ -74,7 +75,8 @@ namespace EnfignaServidor.DAO
                             while (lector.Read()) {
                                 if (lector["Tipo"] == "Criatura")
                                 {
-                                    //Hay problemas con la manera de incorporar la imagen.
+                                    
+
                                     criatura cartaCriatura = new criatura(Convert.ToInt32(lector["numeroCarta"]), lector["nombre"].ToString(), Convert.ToInt32(lector["coste"]), imagen: null, Convert.ToInt32(lector["Ataque"]), Convert.ToInt32(lector["Vida"]));
 
 
@@ -95,7 +97,6 @@ namespace EnfignaServidor.DAO
                     {
                         MessageBox.Show("Nose pudo obtener las cartas del usuario, error:" + ex);
                     }
-                
                 }
             }
             return cartasRecuperadas;

@@ -253,6 +253,126 @@ namespace EnfignaServidor.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap carta_criatura_Death_ {
+            get {
+                object obj = ResourceManager.GetObject("carta_criatura(Death)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap carta_criatura_emperor_ {
+            get {
+                object obj = ResourceManager.GetObject("carta_criatura(emperor)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap carta_criatura_empress_ {
+            get {
+                object obj = ResourceManager.GetObject("carta_criatura(empress)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap carta_criatura_evil_mom_ {
+            get {
+                object obj = ResourceManager.GetObject("carta_criatura(evil mom)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap carta_criatura_fortune_ {
+            get {
+                object obj = ResourceManager.GetObject("carta_criatura(fortune)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap carta_criatura_Golden_ {
+            get {
+                object obj = ResourceManager.GetObject("carta_criatura(Golden)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap carta_criatura_Solar_ {
+            get {
+                object obj = ResourceManager.GetObject("carta_criatura(Solar)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap carta_criatura_woman_ {
+            get {
+                object obj = ResourceManager.GetObject("carta_criatura(woman)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap carta_hechizo_justice_ {
+            get {
+                object obj = ResourceManager.GetObject("carta_hechizo(justice)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap carta_hechizo_magacian_ {
+            get {
+                object obj = ResourceManager.GetObject("carta_hechizo(magacian)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap carta_hechizo_stab_ {
+            get {
+                object obj = ResourceManager.GetObject("carta_hechizo(stab)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap carta_hechizo_The_Hermit_ {
+            get {
+                object obj = ResourceManager.GetObject("carta_hechizo(The Hermit)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap fondo_crealSala {
             get {
                 object obj = ResourceManager.GetObject("fondo_crealSala", resourceCulture);

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using EnfignaServidor.Properties;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -12,11 +13,7 @@ namespace EnfignaServidor.Modelo
         public int numeroDeCarta;
         public string nombre = "";
         public int costeMana;
-        public Image? imagenCarta = null;
-       
-        
-        
-        
+        public Image? imagenCarta = null;        
         public Carta() { }
 
         public Carta(int numeroDecarta, string nombre, int costeMana, Image imagenCarta)
@@ -27,13 +24,7 @@ namespace EnfignaServidor.Modelo
             this.imagenCarta = imagenCarta;
         }
 
-
-        public 
-
-
-
-
-
+        
 
     }
 }

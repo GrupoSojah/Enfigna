@@ -214,4 +214,40 @@
   <data name="pantalla_batalla1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\pantalla_batalla1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="carta_criatura(Death)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\carta_criatura(Death).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="carta_criatura(emperor)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\carta_criatura(emperor).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="carta_criatura(empress)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\carta_criatura(empress).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="carta_criatura(evil mom)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\carta_criatura(evil mom).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="carta_criatura(fortune)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\carta_criatura(fortune).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="carta_criatura(Golden)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\carta_criatura(Golden).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="carta_criatura(Solar)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\carta_criatura(Solar).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="carta_criatura(woman)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\carta_criatura(woman).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="carta_hechizo(justice)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\carta_hechizo(justice).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="carta_hechizo(magacian)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\carta_hechizo(magacian).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="carta_hechizo(stab)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\carta_hechizo(stab).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="carta_hechizo(The Hermit)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\carta_hechizo(The Hermit).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
 </root>
