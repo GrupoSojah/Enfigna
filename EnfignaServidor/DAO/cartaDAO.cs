@@ -19,9 +19,9 @@ namespace EnfignaServidor.DAO
         {
             ArrayList mazosRecuperados = new ArrayList();
 
-            string recuperarMazosQuery = "SELECT m.idMazo FROM mazo AS m " +
-                "INNER JOIN jugador_has_mazo AS jhm ON m.idMazo = jhm.Mazo_idMazo " +
-                "INNER JOIN jugador AS j ON j.idJugador = jhm.Jugador_idJugador " +
+            string recuperarMazosQuery = "SELECT m.* FROM mazo AS m \r\n" +
+                "INNER JOIN jugador_has_mazo AS jhm ON m.idMazo = jhm.Mazo_idMazo\r\n" +
+                "INNER JOIN jugador AS j ON j.idJugador = jhm.Jugador_idJugador\r\n" +
                 "WHERE j.idJugador = @idJugador";
 
             using (MySqlConnection connection = conexion.establecerConexion())
@@ -36,8 +36,9 @@ namespace EnfignaServidor.DAO
                         {
                             while (lector.Read())
                             {
-                                int idMazo = lector.GetInt32("idMazo");
-                                mazosRecuperados.Add(idMazo);
+                                string nombreID = lector["nombre"].ToString() + lector["idMazo".ToString()];
+
+                                mazosRecuperados.Add(nombreID);
                             }
                         }
                     }
