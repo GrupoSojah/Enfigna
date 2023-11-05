@@ -51,17 +51,17 @@ namespace EnfignaServidor.Vistas
     }
 }
 
-        /*
-       private void buttonCrearCuenta_Click(object sender, EventArgs e)
-       {
-           jugadorDAO insertaJugador = new jugadorDAO(conexion);
-           int halo = 1500;
+/*
+private void buttonCrearCuenta_Click(object sender, EventArgs e)
+{
+   jugadorDAO insertaJugador = new jugadorDAO(conexion);
+   int halo = 1500;
 
-           insertaJugador.CrearCuenta(inputUsuario, inputPassword, halo);
-       }
+   insertaJugador.CrearCuenta(inputUsuario, inputPassword, halo);
+}
 
-       private void dgvUsuarios_CellContentClick(object sender, DataGridViewCellEventArgs e)
-       {
+private void dgvUsuarios_CellContentClick(object sender, DataGridViewCellEventArgs e)
+{
 
-       }
-       */
+}
+*/

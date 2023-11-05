@@ -50,9 +50,9 @@
             button_comprar.BackgroundImageLayout = ImageLayout.Stretch;
             button_comprar.FlatAppearance.BorderSize = 0;
             button_comprar.FlatStyle = FlatStyle.Flat;
-            button_comprar.Location = new Point(470, 548);
+            button_comprar.Location = new Point(433, 612);
             button_comprar.Name = "button_comprar";
-            button_comprar.Size = new Size(220, 44);
+            button_comprar.Size = new Size(214, 44);
             button_comprar.TabIndex = 1;
             button_comprar.UseVisualStyleBackColor = true;
             // 
@@ -60,9 +60,9 @@
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            BackgroundImage = Properties.Resources.fondo_Tienda;
+            BackgroundImage = Properties.Resources.fondo_Tienda1;
             BackgroundImageLayout = ImageLayout.Stretch;
-            ClientSize = new Size(1159, 641);
+            ClientSize = new Size(1125, 705);
             Controls.Add(button_comprar);
             Controls.Add(button_Tienda);
             DoubleBuffered = true;

@@ -118,44 +118,62 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="fondo_crealSala" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\fondo_crealSala.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="menu principal" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\menu principal.jpeg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="boton_crear (2)" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\boton_crear (2).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="boton_crear" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\boton_crear.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="fondo_Tienda" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\fondo_Tienda.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="fondo_UnirseAsala" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\fondo_UnirseAsala.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="fondo_crealSala2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\fondo_crealSala2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Captura de pantalla 2023-10-29 141743" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Captura de pantalla 2023-10-29 141743.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="boton_comprar" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\boton_comprar.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="boton_play" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\boton_play.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Captura de pantalla 2023-10-30 163411" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Captura de pantalla 2023-10-30 163411.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="pantalla_Registro" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\pantalla_Registro.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="boton_atras" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\boton_atras.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="FONDOOO1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\FONDOOO1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="fondo_crealSala" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\fondo_crealSala.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="fondo_modalidad" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\fondo_modalidad.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="boton_crear" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\boton_crear.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Captura de pantalla 2023-10-29 162848" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Captura de pantalla 2023-10-29 162848.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Captura de pantalla 2023-10-29 132000" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Captura de pantalla 2023-10-29 132000.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="fondo_UnirseAsala" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\fondo_UnirseAsala.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="boton_tienda" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\boton_tienda.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="boton_mazo" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\boton_mazo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="boton_Atras(modalidad)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\boton_Atras(modalidad).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Ver mazos" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Ver mazos.jpeg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="boton_unirse" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\boton_unirse.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="fondo_modalidad" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\fondo_modalidad.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="boton_atras(fondo UNIRSE A SALA)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\boton_atras(fondo UNIRSE A SALA).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="boton_confi" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\boton_confi.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -163,34 +181,31 @@
   <data name="fondo_crealSala1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\fondo_crealSala1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Captura de pantalla 2023-10-29 132000" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Captura de pantalla 2023-10-29 132000.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="boton_atras1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\boton_atras1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="menu principal" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\menu principal.jpeg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="FONDOOO1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\FONDOOO1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="fondo_Tienda" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\fondo_Tienda.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="boton_mazo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\boton_mazo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Captura de pantalla 2023-10-30 1634111" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Captura de pantalla 2023-10-30 1634111.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Captura de pantalla 2023-10-29 164930" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Captura de pantalla 2023-10-29 164930.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="boton_Atras(modalidad)" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\boton_Atras(modalidad).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="boton_atras(fondo UNIRSE A SALA)" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\boton_atras(fondo UNIRSE A SALA).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="boton_comprar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\boton_comprar.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="boton_Atras(tienda)" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\boton_Atras(tienda).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="boton_play" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\boton_play.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Captura de pantalla 2023-10-30 1634111" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Captura de pantalla 2023-10-30 1634111.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Ver mazos" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Ver mazos.jpeg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Captura de pantalla 2023-10-29 141743" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Captura de pantalla 2023-10-29 141743.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="fondo_crealSala2" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\fondo_crealSala2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="fondo_Tienda1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\fondo_Tienda1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

@@ -103,6 +103,16 @@ namespace EnfignaServidor.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap boton_atras1 {
+            get {
+                object obj = ResourceManager.GetObject("boton_atras1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap boton_comprar {
             get {
                 object obj = ResourceManager.GetObject("boton_comprar", resourceCulture);
@@ -203,6 +213,26 @@ namespace EnfignaServidor.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Captura_de_pantalla_2023_10_29_162848 {
+            get {
+                object obj = ResourceManager.GetObject("Captura de pantalla 2023-10-29 162848", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Captura_de_pantalla_2023_10_29_164930 {
+            get {
+                object obj = ResourceManager.GetObject("Captura de pantalla 2023-10-29 164930", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Captura_de_pantalla_2023_10_30_163411 {
             get {
                 object obj = ResourceManager.GetObject("Captura de pantalla 2023-10-30 163411", resourceCulture);
@@ -273,6 +303,16 @@ namespace EnfignaServidor.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap fondo_Tienda1 {
+            get {
+                object obj = ResourceManager.GetObject("fondo_Tienda1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap fondo_UnirseAsala {
             get {
                 object obj = ResourceManager.GetObject("fondo_UnirseAsala", resourceCulture);
@@ -296,6 +336,16 @@ namespace EnfignaServidor.Properties {
         internal static System.Drawing.Bitmap menu_principal {
             get {
                 object obj = ResourceManager.GetObject("menu principal", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap pantalla_Registro {
+            get {
+                object obj = ResourceManager.GetObject("pantalla_Registro", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

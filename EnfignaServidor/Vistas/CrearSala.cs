@@ -26,7 +26,7 @@ namespace EnfignaServidor.Vistas
 
         private void buttonCrearSala_Click(object sender, EventArgs e)
         {
-            
+
             //jugadorDAO jugadorCreador = new jugadorDAO();
 
 

@@ -16,7 +16,7 @@ namespace EnfignaServidor.DAO
 
 
 
-        public List<Carta> recuperarCartasCriaturaDelJugador(int idJugador, int idMazo)
+        /*public List<Carta> recuperarCartasCriaturaDelJugador(int idJugador, int idMazo)
         {
 
             List<Carta> cartasRecuperadas = new List<Carta>();
@@ -55,7 +55,7 @@ namespace EnfignaServidor.DAO
             }
 
             return cartasRecuperadas;
-        }
+        }*/
 
     }
 }
