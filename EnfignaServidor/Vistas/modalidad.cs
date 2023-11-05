@@ -15,10 +15,12 @@ namespace EnfignaServidor.Vistas
     public partial class modalidad : Form
     {
         private Jugador usuarioActual;
-        public modalidad(Jugador usuario)
+        private string nombreMazo;
+        public modalidad(Jugador usuario, string mazo)
         {
             InitializeComponent();
             this.usuarioActual = usuario;
+            this.nombreMazo = mazo;
 
             labelUsuario.Text = usuario.usuario.ToString();
         }

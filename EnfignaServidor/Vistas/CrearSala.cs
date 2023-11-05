@@ -1,5 +1,6 @@
 ﻿using EnfignaServidor.DAO;
 using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -13,9 +14,14 @@ namespace EnfignaServidor.Vistas
 {
     public partial class crearSala : Form
     {
-        public crearSala()
+        private string nombreMazo;
+        ArrayList cartasDelJugador = new ArrayList();
+        cartaDAO gestionCartas = new cartaDAO();
+        public crearSala(string NombreDemazo)
         {
             InitializeComponent();
+            this.nombreMazo = NombreDemazo;
+
         }
 
         private void buton_CrearSala_Load(object sender, EventArgs e)
@@ -26,8 +32,7 @@ namespace EnfignaServidor.Vistas
 
         private void buttonCrearSala_Click(object sender, EventArgs e)
         {
-
-            //jugadorDAO jugadorCreador = new jugadorDAO();
+            cartasDelJugador = gestionCartas.recuperarCartasDelJugador(nombreMazo);
 
 
             //jugadorCreador.CrearSala(textBoxNombreSala, textBoxContaseña);
