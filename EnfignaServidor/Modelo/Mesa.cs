@@ -72,8 +72,21 @@ namespace EnfignaServidor.Modelo
 
             if (parametros.Length == 2)
             {
-                cj2.Defender(Convert.ToInt32(parametros[1]));
-                string criatura1 = j2.vida.ToString() + "&" + cj2.daño.ToString() + "&" + cj2.salud.ToString();
+                j2.RecivirDaño(Convert.ToInt32(parametros[1]));
+                string criatura2 = j2.vida.ToString() + "&" + cj2.daño.ToString() + "&" + cj2.salud.ToString();
+                return criatura2;
+            }
+            return info;
+        }
+        public string Criatura2ContraJugador1(string info)
+        {
+
+            string[] parametros = info.Split('&');
+
+            if (parametros.Length == 2)
+            {
+                j1.RecivirDaño(Convert.ToInt32(parametros[1]));
+                string criatura1 = j1.vida.ToString() + "&" + cj1.daño.ToString() + "&" + cj1.salud.ToString();
                 return criatura1;
             }
             return info;
