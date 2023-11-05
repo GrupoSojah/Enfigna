@@ -10,9 +10,5 @@ namespace EnfignaServidor.DAO
     {
         conexionBD conexion = new conexionBD();
 
-        public bool 
-
-
-
     }
 }

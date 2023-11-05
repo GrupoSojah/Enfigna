@@ -1,6 +1,7 @@
 ﻿using EnfignaServidor.DAO;
 using EnfignaServidor.Modelo;
 using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -15,9 +16,11 @@ namespace EnfignaServidor.Vistas
     public partial class menuPrincipal : Form
     {
 
+        string seleccion = "";
         static conexionBD conexion = new conexionBD();
         jugadorDAO DAOdeJugador = new jugadorDAO(conexion);
         private Jugador usuarioActual;
+        cartaDAO gestionCartas = new cartaDAO();
 
 
         public menuPrincipal(Jugador usuario)
@@ -25,9 +28,18 @@ namespace EnfignaServidor.Vistas
             InitializeComponent();
             this.usuarioActual = usuario;
 
+            int idUsuario = DAOdeJugador.recuperarIDUsuario(usuarioActual);
+
             labelusuario.Text = this.usuarioActual.usuario;
             labelDinero.Text = this.usuarioActual.dinero.ToString();
             labelHalo.Text = this.usuarioActual.halo.ToString();
+
+            ArrayList mazosCombobox = new ArrayList();
+
+            mazosCombobox = gestionCartas.recuperarMazos(idUsuario);
+
+            comboBoxMazos.Items.AddRange(mazosCombobox.ToArray());
+
         }
 
         private void button_mazo_Click(object sender, EventArgs e)
@@ -46,7 +58,9 @@ namespace EnfignaServidor.Vistas
 
         private void button_play_Click(object sender, EventArgs e)
         {
-            modalidad pantallSeleccionarModo = new modalidad(usuarioActual);
+            seleccion = comboBoxMazos.SelectedItem.ToString();
+
+            modalidad pantallSeleccionarModo = new modalidad(usuarioActual, seleccion);
 
             pantallSeleccionarModo.Show();
             this.Close();

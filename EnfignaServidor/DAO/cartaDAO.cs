@@ -36,9 +36,10 @@ namespace EnfignaServidor.DAO
                         {
                             while (lector.Read())
                             {
-                                string nombreID = lector["nombre"].ToString() + lector["idMazo".ToString()];
+                                string nombreID = lector["nombre"].ToString();
 
                                 mazosRecuperados.Add(nombreID);
+
                             }
                         }
                     }
@@ -52,29 +53,25 @@ namespace EnfignaServidor.DAO
         }
 
         //recuperaCartasDeLosMazos
-        public List<Carta> recuperarCartasDelJugador(int idJugador, int idMazo) { 
-            List<Carta> cartasRecuperadas = new List<Carta>();
+        public ArrayList recuperarCartasDelJugador(string Nombremazo) { 
+            ArrayList cartasRecuperadas = new ArrayList();
 
             string recuperarCartasQuery = "SELECT c.* FROM carta AS c  " +
                 "INNER JOIN carta_has_mazo AS chm on c.numeroDeCarta = chm.Carta_numeroDeCarta " +
                 "INNER JOIN  mazo AS m ON chm.Mazo_idMazo = m.idMazo  " +
                 "INNER JOIN jugador_has_mazo AS jhm on m.idMazo = jhm.Mazo_idMazo " +
                 "INNER JOIN jugador as j ON j.idJugador = " + " jhm.Jugador_idJugador " +
-                "WHERE m.idMazo = @idmazo AND j.idJugador = @idjugador";
+                "WHERE m.nombre = @nombreMazo";
 
             using (MySqlConnection connection = conexion.establecerConexion()) {
                 using (MySqlCommand comandoRecuperarCartas = new MySqlCommand(recuperarCartasQuery, connection)) {
-                    comandoRecuperarCartas.Parameters.AddWithValue("@idmazo", idMazo);
-                    comandoRecuperarCartas.Parameters.AddWithValue("@idjugador", idJugador);
+                    comandoRecuperarCartas.Parameters.AddWithValue("@nombreMazo", Nombremazo);
 
                     try
                     {
                         using (MySqlDataReader lector = comandoRecuperarCartas.ExecuteReader())
                         {
                             while (lector.Read()) {
-
-
-
                                 if (lector["Tipo"] == "Criatura")
                                 {
                                     //Hay problemas con la manera de incorporar la imagen.

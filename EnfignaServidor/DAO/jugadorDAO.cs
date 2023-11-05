@@ -203,10 +203,11 @@ namespace EnfignaServidor.DAO
         {
             int idUsuario = -1;
 
-            string recuperarUsuarioQuery = "SELECT idUsuario FROM usuario WHERE usuario = @usuario";
+            string recuperarUsuarioQuery = "SELECT idJugador FROM Jugador WHERE Usuario = @usuario";
 
             using (MySqlConnection connection = conexion.establecerConexion())
             {
+                
                 using (MySqlCommand comandoIdUsuario = new MySqlCommand(recuperarUsuarioQuery, connection))
                 {
                     comandoIdUsuario.Parameters.AddWithValue("@usuario", player.usuario);
@@ -217,7 +218,7 @@ namespace EnfignaServidor.DAO
                         {
                             if (lector.Read())
                             {
-                                idUsuario = lector.GetInt32("idUsuario");
+                                idUsuario = lector.GetInt32("idJugador");
                             }
                         }
                     }
