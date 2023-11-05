@@ -13,6 +13,11 @@ namespace EnfignaServidor.Modelo
         public string nombre = "";
         public int costeMana;
         public Image? imagenCarta = null;
+       
+        
+        
+        
+        public Carta() { }
 
         public Carta(int numeroDecarta, string nombre, int costeMana, Image imagenCarta)
         {

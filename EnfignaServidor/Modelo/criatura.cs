@@ -11,6 +11,7 @@ namespace EnfignaServidor.Modelo
         public int daño;
         public int salud;
         public bool accion;
+        public criatura() { }
 
         public criatura(int numeroDecarta, string nombre, int costeMana, Image imagen, int Daño, int Salud) : base(numeroDecarta, nombre, costeMana, imagen)
         {
