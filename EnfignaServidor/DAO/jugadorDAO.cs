@@ -20,6 +20,8 @@ namespace EnfignaServidor.DAO
             this.conexion = conexion;
         }
 
+
+
         public bool entrarJuego(TextBox usuario, TextBox contraseña)
         {
             bool accesoPermitido = false;
@@ -51,6 +53,7 @@ namespace EnfignaServidor.DAO
             }
             return accesoPermitido;
         }
+
 
         public Jugador recuperarDatosdelUsuario()
         {
