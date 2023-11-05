@@ -1,6 +1,7 @@
 ﻿using EnfignaServidor.Modelo;
 using MySql.Data.MySqlClient;
 using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using System.Numerics;
@@ -11,51 +12,96 @@ namespace EnfignaServidor.DAO
 {
     internal class cartaDAO
     {
-        static conexionBD conexion = new conexionBD();
+        conexionBD conexion = new conexionBD();
 
-
-
-
-        /*public List<Carta> recuperarCartasCriaturaDelJugador(int idJugador, int idMazo)
+        //recuperaIdMazos por id de jugador
+        public ArrayList recuperarMazos(int idJugador)
         {
+            ArrayList mazosRecuperados = new ArrayList();
 
-            List<Carta> cartasRecuperadas = new List<Carta>();
+            string recuperarMazosQuery = "SELECT m.* FROM mazo AS m \r\n" +
+                "INNER JOIN jugador_has_mazo AS jhm ON m.idMazo = jhm.Mazo_idMazo\r\n" +
+                "INNER JOIN jugador AS j ON j.idJugador = jhm.Jugador_idJugador\r\n" +
+                "WHERE j.idJugador = @idJugador";
 
-            string recuperarCartasQuery = "SELECT numeroDeCarta FROM carta WHERE id"
-
-
-
-
-            string recuperarCartasQuery = "SELECT idCarta FROM Carta Where idUsuario = '"
-                + player.recuperarIDUsuario() + "'";
-
-            try
+            using (MySqlConnection connection = conexion.establecerConexion())
             {
-                MySqlCommand comandoRecuperarCartas = new MySqlCommand(recuperarCartasQuery, conexion.establecerConexion());
-                MySqlDataReader lector = comandoRecuperarCartas.ExecuteReader();
-
-                while (lector.Read())
+                using (MySqlCommand comandoRecuperarMazos = new MySqlCommand(recuperarMazosQuery, connection))
                 {
-                    int idcarta = lector.GetInt32("idCarta");
-                    int a = 0;
+                    comandoRecuperarMazos.Parameters.AddWithValue("@idJugador", idJugador);
 
-                    Carta carta = new Carta
+                    try
                     {
-                        id = idcarta,
-                        ataque = a,
-                        vida = a,
-                    };
+                        using (MySqlDataReader lector = comandoRecuperarMazos.ExecuteReader())
+                        {
+                            while (lector.Read())
+                            {
+                                string nombreID = lector["nombre"].ToString() + lector["idMazo".ToString()];
 
-                    cartasRecuperadas.Add(carta);
+                                mazosRecuperados.Add(nombreID);
+                            }
+                        }
+                    }
+                    catch (MySqlException ex)
+                    {
+                        MessageBox.Show("Error al recuperar mazos: " + ex.Message);
+                    }
                 }
             }
-            catch (Exception ex)
-            {
-                MessageBox.Show("la verda no funciona tu recuperacion de cartas, error.  " + ex);
+            return mazosRecuperados;
+        }
+
+        //recuperaCartasDeLosMazos
+        public List<Carta> recuperarCartasDelJugador(int idJugador, int idMazo) { 
+            List<Carta> cartasRecuperadas = new List<Carta>();
+
+            string recuperarCartasQuery = "SELECT c.* FROM carta AS c  " +
+                "INNER JOIN carta_has_mazo AS chm on c.numeroDeCarta = chm.Carta_numeroDeCarta " +
+                "INNER JOIN  mazo AS m ON chm.Mazo_idMazo = m.idMazo  " +
+                "INNER JOIN jugador_has_mazo AS jhm on m.idMazo = jhm.Mazo_idMazo " +
+                "INNER JOIN jugador as j ON j.idJugador = " + " jhm.Jugador_idJugador " +
+                "WHERE m.idMazo = @idmazo AND j.idJugador = @idjugador";
+
+            using (MySqlConnection connection = conexion.establecerConexion()) {
+                using (MySqlCommand comandoRecuperarCartas = new MySqlCommand(recuperarCartasQuery, connection)) {
+                    comandoRecuperarCartas.Parameters.AddWithValue("@idmazo", idMazo);
+                    comandoRecuperarCartas.Parameters.AddWithValue("@idjugador", idJugador);
+
+                    try
+                    {
+                        using (MySqlDataReader lector = comandoRecuperarCartas.ExecuteReader())
+                        {
+                            while (lector.Read()) {
+
+
+
+                                if (lector["Tipo"] == "Criatura")
+                                {
+                                    //Hay problemas con la manera de incorporar la imagen.
+                                    criatura cartaCriatura = new criatura(Convert.ToInt32(lector["numeroCarta"]), lector["nombre"].ToString(), Convert.ToInt32(lector["coste"]), imagen: null, Convert.ToInt32(lector["Ataque"]), Convert.ToInt32(lector["Vida"]));
+
+
+                                    cartasRecuperadas.Add(cartaCriatura);
+                                }
+                                else {
+                                    //incorporar la iamgen tambien, no se como hacerlo.
+                                    hechizo cartaHechizo = new hechizo(Convert.ToInt32(lector["numeroCarta"]), lector["nombre"].ToString(), Convert.ToInt32(lector["coste"]), null, Convert.ToInt32(lector["Efecto"]));
+
+                                    cartasRecuperadas.Add(cartaHechizo);
+                                
+                                }
+                            }
+                        }
+
+                    }
+                    catch (MySqlException ex)
+                    {
+                        MessageBox.Show("Nose pudo obtener las cartas del usuario, error:" + ex);
+                    }
+                
+                }
             }
-
             return cartasRecuperadas;
-        }*/
-
+        }  
     }
 }

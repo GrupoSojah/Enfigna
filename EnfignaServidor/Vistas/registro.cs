@@ -17,6 +17,7 @@ namespace EnfignaServidor.Vistas
 
         public registro()
         {
+
             InitializeComponent();
             /*
             jugadorDAO mostrar = new jugadorDAO(conexion);

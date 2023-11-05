@@ -2,6 +2,7 @@
 using EnfignaServidor.Vistas;
 using MySql.Data.MySqlClient;
 using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Data;
 using System.Linq;
@@ -19,6 +20,8 @@ namespace EnfignaServidor.DAO
         {
             this.conexion = conexion;
         }
+
+
 
         public bool entrarJuego(TextBox usuario, TextBox contraseña)
         {
@@ -51,6 +54,7 @@ namespace EnfignaServidor.DAO
             }
             return accesoPermitido;
         }
+
 
         public Jugador recuperarDatosdelUsuario()
         {
@@ -126,6 +130,73 @@ namespace EnfignaServidor.DAO
             return insertaSala;
         }
 
+        public ArrayList VerPartidas()
+        {
+            ArrayList Salas = new ArrayList();
+            string recuperarSalasQuery = "SELECT * FROM partida";
+
+            using (MySqlConnection connection = conexion.establecerConexion())
+            {
+                using (MySqlCommand comandoRecuperarSalas = new MySqlCommand(recuperarSalasQuery, connection))
+                {
+                    try
+                    {
+                        using (MySqlDataReader lector = comandoRecuperarSalas.ExecuteReader())
+                        {
+                            while (lector.Read())
+                            {
+                                string partida = lector["usuarioCreador"].ToString() + lector["Nombrepartida".ToString()] + lector["tipoPartida".ToString()] + Convert.ToInt32(lector["idPartida"]);
+                                Salas.Add(partida);
+                            }
+                        }
+                    }
+                    catch (MySqlException ex)
+                    {
+                        MessageBox.Show("Error al recuperar las salas: " + ex.Message);
+                    }
+                }
+            }
+            return Salas;
+        }
+
+        public bool EntrarSala(int idPartida, string contraseña) { 
+            bool adentro = false;
+            ArrayList Salas = new ArrayList();
+            string recuperarSalasQuery = "SELECT COUNT(ContraseñaPartida) AS contraseñaCorrecta FROM partida WHERE idPartida = @idPartida AND ContraseñaPartida = @contraseña ";
+
+            using (MySqlConnection connection = conexion.establecerConexion())
+            {
+
+                using (MySqlCommand comandoRecuperarContraseñaSala = new MySqlCommand(recuperarSalasQuery, connection))
+                {
+                    comandoRecuperarContraseñaSala.Parameters.AddWithValue("@idPartida",idPartida);
+                    comandoRecuperarContraseñaSala.Parameters.AddWithValue("@contraseña", contraseña);
+
+                    try
+                    {
+                        using (MySqlDataReader lector = comandoRecuperarContraseñaSala.ExecuteReader())
+                        {
+                            while (lector.Read())
+                            {
+                                if (lector["contraseñaCorrecta"].ToString() == "1") { 
+                                    adentro = true;
+                                }
+                            }
+                        }
+                    }
+                    catch (MySqlException ex)
+                    {
+                        MessageBox.Show("Error al ingresar a la sala: " + ex.Message);
+                    }
+                }
+            }
+            return adentro;
+        }
+
+
+
+
+
 
 
         public int recuperarIDUsuario(Jugador player)
@@ -158,6 +229,10 @@ namespace EnfignaServidor.DAO
             }
             return idUsuario;
         }
+
+
+
+
 
 
 

@@ -14,10 +14,6 @@ namespace EnfignaServidor.Modelo
         public int costeMana;
         public Image? imagenCarta = null;
 
-        public Carta() { 
-        
-        }
-
         public Carta(int numeroDecarta, string nombre, int costeMana, Image imagenCarta)
         {
             this.costeMana = costeMana;

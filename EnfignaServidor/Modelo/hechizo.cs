@@ -10,6 +10,7 @@ namespace EnfignaServidor.Modelo
     {
         public int efecto;
 
+        
         public hechizo(int numeroDecarta, string nombre, int costeMana, Image imagenCarta, int efecto) : base(numeroDecarta, nombre, costeMana, imagenCarta)
         {
             this.efecto = efecto;
