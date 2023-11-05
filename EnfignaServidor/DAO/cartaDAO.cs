@@ -3,6 +3,7 @@ using MySql.Data.MySqlClient;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Numerics;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -10,23 +11,31 @@ namespace EnfignaServidor.DAO
 {
     internal class cartaDAO
     {
-        /*
-        public List<Carta> recuperarCartasCriaturaDelJugador() { 
-            
-            List<Carta> cartasRecuperadas = new List<Carta> ();
+        static conexionBD conexion = new conexionBD();
 
-            conexionBD conexion = new conexionBD();
 
-            jugadorDAO player = new jugadorDAO();
 
-            string recuperarCartasQuery = "SELECT idCarta FROM Carta Where idUsuario = '" 
+
+        public List<Carta> recuperarCartasCriaturaDelJugador(int idJugador, int idMazo)
+        {
+
+            List<Carta> cartasRecuperadas = new List<Carta>();
+
+            string recuperarCartasQuery = "SELECT numeroDeCarta FROM carta WHERE id"
+
+
+
+
+            string recuperarCartasQuery = "SELECT idCarta FROM Carta Where idUsuario = '"
                 + player.recuperarIDUsuario() + "'";
 
-            try { 
-                MySqlCommand comandoRecuperarCartas = new MySqlCommand (recuperarCartasQuery, conexion.establecerConexion());
+            try
+            {
+                MySqlCommand comandoRecuperarCartas = new MySqlCommand(recuperarCartasQuery, conexion.establecerConexion());
                 MySqlDataReader lector = comandoRecuperarCartas.ExecuteReader();
 
-                while (lector.Read()) {
+                while (lector.Read())
+                {
                     int idcarta = lector.GetInt32("idCarta");
                     int a = 0;
 
@@ -47,6 +56,6 @@ namespace EnfignaServidor.DAO
 
             return cartasRecuperadas;
         }
-        */
+
     }
 }

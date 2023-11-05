@@ -16,5 +16,15 @@ namespace EnfignaServidor.Vistas
         {
             InitializeComponent();
         }
+
+        private void pictureCartausuario_dos_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void batalla_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

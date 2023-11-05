@@ -30,46 +30,55 @@
         {
             grupoDatosusuario = new GroupBox();
             layoutCarta = new FlowLayoutPanel();
-            pictureBox1 = new PictureBox();
-            pictureBox2 = new PictureBox();
-            pictureBox3 = new PictureBox();
-            pictureBox4 = new PictureBox();
-            flowLayoutPanel1 = new FlowLayoutPanel();
-            pictureBox5 = new PictureBox();
-            layputCampoBatalla = new FlowLayoutPanel();
-            flowLayoutPanel2 = new FlowLayoutPanel();
+            pictureCartausuario_Uno = new PictureBox();
+            pictureCartausuario_dos = new PictureBox();
+            pictureCartausuario_tres = new PictureBox();
+            pictureCartausuario_Cuatro = new PictureBox();
+            layoutMazo = new FlowLayoutPanel();
+            MazoAtrasUsuario = new PictureBox();
+            layoutCampoBatalla = new FlowLayoutPanel();
+            layutMazoAtrasOponente = new FlowLayoutPanel();
             pictureMazoAtras = new PictureBox();
             flowLayoutPanel3 = new FlowLayoutPanel();
-            PictureCarta_uno = new PictureBox();
-            pictureCarta_dos = new PictureBox();
-            pictureCarta_tres = new PictureBox();
-            pictureCarta_cuatro = new PictureBox();
-            groupBox1 = new GroupBox();
+            pictureCartaOponente_uno = new PictureBox();
+            pictureCartaOponente_dos = new PictureBox();
+            pictureCartaOponente_tres = new PictureBox();
+            pictureCartaOponente_cuatro = new PictureBox();
+            datosOponente = new GroupBox();
             label4 = new Label();
-            progressBar2 = new ProgressBar();
+            barraOponenteMana = new ProgressBar();
             label3 = new Label();
             labelusuarioNombre = new Label();
             label1 = new Label();
-            progressBar1 = new ProgressBar();
+            barraVidaOponente = new ProgressBar();
+            barraVidaUsuario = new ProgressBar();
+            BarraManaUsuario = new ProgressBar();
+            label2 = new Label();
+            label5 = new Label();
+            grupoDatosusuario.SuspendLayout();
             layoutCarta.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox4).BeginInit();
-            flowLayoutPanel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox5).BeginInit();
-            flowLayoutPanel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureCartausuario_Uno).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureCartausuario_dos).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureCartausuario_tres).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureCartausuario_Cuatro).BeginInit();
+            layoutMazo.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)MazoAtrasUsuario).BeginInit();
+            layutMazoAtrasOponente.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureMazoAtras).BeginInit();
             flowLayoutPanel3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)PictureCarta_uno).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureCarta_dos).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureCarta_tres).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureCarta_cuatro).BeginInit();
-            groupBox1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureCartaOponente_uno).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureCartaOponente_dos).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureCartaOponente_tres).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureCartaOponente_cuatro).BeginInit();
+            datosOponente.SuspendLayout();
             SuspendLayout();
             // 
             // grupoDatosusuario
             // 
+            grupoDatosusuario.Controls.Add(label5);
+            grupoDatosusuario.Controls.Add(label2);
+            grupoDatosusuario.Controls.Add(BarraManaUsuario);
+            grupoDatosusuario.Controls.Add(barraVidaUsuario);
             grupoDatosusuario.Location = new Point(12, 382);
             grupoDatosusuario.Name = "grupoDatosusuario";
             grupoDatosusuario.Size = new Size(346, 129);
@@ -79,77 +88,78 @@
             // 
             // layoutCarta
             // 
-            layoutCarta.Controls.Add(pictureBox1);
-            layoutCarta.Controls.Add(pictureBox2);
-            layoutCarta.Controls.Add(pictureBox3);
-            layoutCarta.Controls.Add(pictureBox4);
+            layoutCarta.Controls.Add(pictureCartausuario_Uno);
+            layoutCarta.Controls.Add(pictureCartausuario_dos);
+            layoutCarta.Controls.Add(pictureCartausuario_tres);
+            layoutCarta.Controls.Add(pictureCartausuario_Cuatro);
             layoutCarta.Location = new Point(502, 389);
             layoutCarta.Name = "layoutCarta";
             layoutCarta.Size = new Size(424, 125);
             layoutCarta.TabIndex = 1;
             // 
-            // pictureBox1
+            // pictureCartausuario_Uno
             // 
-            pictureBox1.Location = new Point(3, 3);
-            pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(100, 119);
-            pictureBox1.TabIndex = 0;
-            pictureBox1.TabStop = false;
+            pictureCartausuario_Uno.Location = new Point(3, 3);
+            pictureCartausuario_Uno.Name = "pictureCartausuario_Uno";
+            pictureCartausuario_Uno.Size = new Size(100, 119);
+            pictureCartausuario_Uno.TabIndex = 0;
+            pictureCartausuario_Uno.TabStop = false;
             // 
-            // pictureBox2
+            // pictureCartausuario_dos
             // 
-            pictureBox2.Location = new Point(109, 3);
-            pictureBox2.Name = "pictureBox2";
-            pictureBox2.Size = new Size(100, 122);
-            pictureBox2.TabIndex = 1;
-            pictureBox2.TabStop = false;
+            pictureCartausuario_dos.Location = new Point(109, 3);
+            pictureCartausuario_dos.Name = "pictureCartausuario_dos";
+            pictureCartausuario_dos.Size = new Size(100, 122);
+            pictureCartausuario_dos.TabIndex = 1;
+            pictureCartausuario_dos.TabStop = false;
+            pictureCartausuario_dos.Click += pictureCartausuario_dos_Click;
             // 
-            // pictureBox3
+            // pictureCartausuario_tres
             // 
-            pictureBox3.Location = new Point(215, 3);
-            pictureBox3.Name = "pictureBox3";
-            pictureBox3.Size = new Size(100, 119);
-            pictureBox3.TabIndex = 2;
-            pictureBox3.TabStop = false;
+            pictureCartausuario_tres.Location = new Point(215, 3);
+            pictureCartausuario_tres.Name = "pictureCartausuario_tres";
+            pictureCartausuario_tres.Size = new Size(100, 119);
+            pictureCartausuario_tres.TabIndex = 2;
+            pictureCartausuario_tres.TabStop = false;
             // 
-            // pictureBox4
+            // pictureCartausuario_Cuatro
             // 
-            pictureBox4.Location = new Point(321, 3);
-            pictureBox4.Name = "pictureBox4";
-            pictureBox4.Size = new Size(100, 122);
-            pictureBox4.TabIndex = 3;
-            pictureBox4.TabStop = false;
+            pictureCartausuario_Cuatro.Location = new Point(321, 3);
+            pictureCartausuario_Cuatro.Name = "pictureCartausuario_Cuatro";
+            pictureCartausuario_Cuatro.Size = new Size(100, 122);
+            pictureCartausuario_Cuatro.TabIndex = 3;
+            pictureCartausuario_Cuatro.TabStop = false;
             // 
-            // flowLayoutPanel1
+            // layoutMazo
             // 
-            flowLayoutPanel1.Controls.Add(pictureBox5);
-            flowLayoutPanel1.Location = new Point(375, 392);
-            flowLayoutPanel1.Name = "flowLayoutPanel1";
-            flowLayoutPanel1.Size = new Size(111, 125);
-            flowLayoutPanel1.TabIndex = 2;
+            layoutMazo.Controls.Add(MazoAtrasUsuario);
+            layoutMazo.Location = new Point(375, 392);
+            layoutMazo.Name = "layoutMazo";
+            layoutMazo.Size = new Size(111, 125);
+            layoutMazo.TabIndex = 2;
             // 
-            // pictureBox5
+            // MazoAtrasUsuario
             // 
-            pictureBox5.Location = new Point(3, 3);
-            pictureBox5.Name = "pictureBox5";
-            pictureBox5.Size = new Size(104, 122);
-            pictureBox5.TabIndex = 0;
-            pictureBox5.TabStop = false;
+            MazoAtrasUsuario.Location = new Point(3, 3);
+            MazoAtrasUsuario.Name = "MazoAtrasUsuario";
+            MazoAtrasUsuario.Size = new Size(104, 122);
+            MazoAtrasUsuario.TabIndex = 0;
+            MazoAtrasUsuario.TabStop = false;
             // 
-            // layputCampoBatalla
+            // layoutCampoBatalla
             // 
-            layputCampoBatalla.Location = new Point(-2, 143);
-            layputCampoBatalla.Name = "layputCampoBatalla";
-            layputCampoBatalla.Size = new Size(928, 223);
-            layputCampoBatalla.TabIndex = 3;
+            layoutCampoBatalla.Location = new Point(-2, 143);
+            layoutCampoBatalla.Name = "layoutCampoBatalla";
+            layoutCampoBatalla.Size = new Size(928, 223);
+            layoutCampoBatalla.TabIndex = 3;
             // 
-            // flowLayoutPanel2
+            // layutMazoAtrasOponente
             // 
-            flowLayoutPanel2.Controls.Add(pictureMazoAtras);
-            flowLayoutPanel2.Location = new Point(1, 12);
-            flowLayoutPanel2.Name = "flowLayoutPanel2";
-            flowLayoutPanel2.Size = new Size(111, 125);
-            flowLayoutPanel2.TabIndex = 6;
+            layutMazoAtrasOponente.Controls.Add(pictureMazoAtras);
+            layutMazoAtrasOponente.Location = new Point(1, 12);
+            layutMazoAtrasOponente.Name = "layutMazoAtrasOponente";
+            layutMazoAtrasOponente.Size = new Size(111, 125);
+            layutMazoAtrasOponente.TabIndex = 6;
             // 
             // pictureMazoAtras
             // 
@@ -161,61 +171,61 @@
             // 
             // flowLayoutPanel3
             // 
-            flowLayoutPanel3.Controls.Add(PictureCarta_uno);
-            flowLayoutPanel3.Controls.Add(pictureCarta_dos);
-            flowLayoutPanel3.Controls.Add(pictureCarta_tres);
-            flowLayoutPanel3.Controls.Add(pictureCarta_cuatro);
+            flowLayoutPanel3.Controls.Add(pictureCartaOponente_uno);
+            flowLayoutPanel3.Controls.Add(pictureCartaOponente_dos);
+            flowLayoutPanel3.Controls.Add(pictureCartaOponente_tres);
+            flowLayoutPanel3.Controls.Add(pictureCartaOponente_cuatro);
             flowLayoutPanel3.Location = new Point(128, 9);
             flowLayoutPanel3.Name = "flowLayoutPanel3";
             flowLayoutPanel3.Size = new Size(424, 125);
             flowLayoutPanel3.TabIndex = 5;
             // 
-            // PictureCarta_uno
+            // pictureCartaOponente_uno
             // 
-            PictureCarta_uno.Location = new Point(3, 3);
-            PictureCarta_uno.Name = "PictureCarta_uno";
-            PictureCarta_uno.Size = new Size(100, 119);
-            PictureCarta_uno.TabIndex = 0;
-            PictureCarta_uno.TabStop = false;
+            pictureCartaOponente_uno.Location = new Point(3, 3);
+            pictureCartaOponente_uno.Name = "pictureCartaOponente_uno";
+            pictureCartaOponente_uno.Size = new Size(100, 119);
+            pictureCartaOponente_uno.TabIndex = 0;
+            pictureCartaOponente_uno.TabStop = false;
             // 
-            // pictureCarta_dos
+            // pictureCartaOponente_dos
             // 
-            pictureCarta_dos.Location = new Point(109, 3);
-            pictureCarta_dos.Name = "pictureCarta_dos";
-            pictureCarta_dos.Size = new Size(100, 122);
-            pictureCarta_dos.TabIndex = 1;
-            pictureCarta_dos.TabStop = false;
+            pictureCartaOponente_dos.Location = new Point(109, 3);
+            pictureCartaOponente_dos.Name = "pictureCartaOponente_dos";
+            pictureCartaOponente_dos.Size = new Size(100, 122);
+            pictureCartaOponente_dos.TabIndex = 1;
+            pictureCartaOponente_dos.TabStop = false;
             // 
-            // pictureCarta_tres
+            // pictureCartaOponente_tres
             // 
-            pictureCarta_tres.Location = new Point(215, 3);
-            pictureCarta_tres.Name = "pictureCarta_tres";
-            pictureCarta_tres.Size = new Size(100, 119);
-            pictureCarta_tres.TabIndex = 2;
-            pictureCarta_tres.TabStop = false;
+            pictureCartaOponente_tres.Location = new Point(215, 3);
+            pictureCartaOponente_tres.Name = "pictureCartaOponente_tres";
+            pictureCartaOponente_tres.Size = new Size(100, 119);
+            pictureCartaOponente_tres.TabIndex = 2;
+            pictureCartaOponente_tres.TabStop = false;
             // 
-            // pictureCarta_cuatro
+            // pictureCartaOponente_cuatro
             // 
-            pictureCarta_cuatro.Location = new Point(321, 3);
-            pictureCarta_cuatro.Name = "pictureCarta_cuatro";
-            pictureCarta_cuatro.Size = new Size(100, 122);
-            pictureCarta_cuatro.TabIndex = 3;
-            pictureCarta_cuatro.TabStop = false;
+            pictureCartaOponente_cuatro.Location = new Point(321, 3);
+            pictureCartaOponente_cuatro.Name = "pictureCartaOponente_cuatro";
+            pictureCartaOponente_cuatro.Size = new Size(100, 122);
+            pictureCartaOponente_cuatro.TabIndex = 3;
+            pictureCartaOponente_cuatro.TabStop = false;
             // 
-            // groupBox1
+            // datosOponente
             // 
-            groupBox1.Controls.Add(label4);
-            groupBox1.Controls.Add(progressBar2);
-            groupBox1.Controls.Add(label3);
-            groupBox1.Controls.Add(labelusuarioNombre);
-            groupBox1.Controls.Add(label1);
-            groupBox1.Controls.Add(progressBar1);
-            groupBox1.Location = new Point(577, 5);
-            groupBox1.Name = "groupBox1";
-            groupBox1.Size = new Size(346, 129);
-            groupBox1.TabIndex = 4;
-            groupBox1.TabStop = false;
-            groupBox1.Text = "ENFIGNA";
+            datosOponente.Controls.Add(label4);
+            datosOponente.Controls.Add(barraOponenteMana);
+            datosOponente.Controls.Add(label3);
+            datosOponente.Controls.Add(labelusuarioNombre);
+            datosOponente.Controls.Add(label1);
+            datosOponente.Controls.Add(barraVidaOponente);
+            datosOponente.Location = new Point(577, 5);
+            datosOponente.Name = "datosOponente";
+            datosOponente.Size = new Size(346, 129);
+            datosOponente.TabIndex = 4;
+            datosOponente.TabStop = false;
+            datosOponente.Text = "ENFIGNA";
             // 
             // label4
             // 
@@ -226,12 +236,12 @@
             label4.TabIndex = 5;
             label4.Text = "HP";
             // 
-            // progressBar2
+            // barraOponenteMana
             // 
-            progressBar2.Location = new Point(42, 75);
-            progressBar2.Name = "progressBar2";
-            progressBar2.Size = new Size(298, 23);
-            progressBar2.TabIndex = 4;
+            barraOponenteMana.Location = new Point(42, 75);
+            barraOponenteMana.Name = "barraOponenteMana";
+            barraOponenteMana.Size = new Size(298, 23);
+            barraOponenteMana.TabIndex = 4;
             // 
             // label3
             // 
@@ -260,43 +270,78 @@
             label1.TabIndex = 1;
             label1.Text = "Nombre de Usuario:";
             // 
-            // progressBar1
+            // barraVidaOponente
             // 
-            progressBar1.Location = new Point(42, 46);
-            progressBar1.Name = "progressBar1";
-            progressBar1.Size = new Size(302, 23);
-            progressBar1.TabIndex = 0;
+            barraVidaOponente.Location = new Point(42, 46);
+            barraVidaOponente.Name = "barraVidaOponente";
+            barraVidaOponente.Size = new Size(302, 23);
+            barraVidaOponente.TabIndex = 0;
+            // 
+            // barraVidaUsuario
+            // 
+            barraVidaUsuario.Location = new Point(63, 38);
+            barraVidaUsuario.Name = "barraVidaUsuario";
+            barraVidaUsuario.Size = new Size(262, 23);
+            barraVidaUsuario.TabIndex = 0;
+            // 
+            // BarraManaUsuario
+            // 
+            BarraManaUsuario.Location = new Point(63, 83);
+            BarraManaUsuario.Name = "BarraManaUsuario";
+            BarraManaUsuario.Size = new Size(262, 23);
+            BarraManaUsuario.TabIndex = 1;
+            // 
+            // label2
+            // 
+            label2.AutoSize = true;
+            label2.Location = new Point(6, 38);
+            label2.Name = "label2";
+            label2.Size = new Size(23, 15);
+            label2.TabIndex = 2;
+            label2.Text = "HP";
+            // 
+            // label5
+            // 
+            label5.AutoSize = true;
+            label5.Location = new Point(6, 83);
+            label5.Name = "label5";
+            label5.Size = new Size(37, 15);
+            label5.TabIndex = 3;
+            label5.Text = "Mana";
             // 
             // batalla
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(930, 535);
-            Controls.Add(groupBox1);
-            Controls.Add(flowLayoutPanel2);
+            Controls.Add(datosOponente);
+            Controls.Add(layutMazoAtrasOponente);
             Controls.Add(flowLayoutPanel3);
-            Controls.Add(layputCampoBatalla);
-            Controls.Add(flowLayoutPanel1);
+            Controls.Add(layoutCampoBatalla);
+            Controls.Add(layoutMazo);
             Controls.Add(layoutCarta);
             Controls.Add(grupoDatosusuario);
             Name = "batalla";
             Text = "batalla";
+            Load += batalla_Load;
+            grupoDatosusuario.ResumeLayout(false);
+            grupoDatosusuario.PerformLayout();
             layoutCarta.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox3).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox4).EndInit();
-            flowLayoutPanel1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)pictureBox5).EndInit();
-            flowLayoutPanel2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)pictureCartausuario_Uno).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureCartausuario_dos).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureCartausuario_tres).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureCartausuario_Cuatro).EndInit();
+            layoutMazo.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)MazoAtrasUsuario).EndInit();
+            layutMazoAtrasOponente.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)pictureMazoAtras).EndInit();
             flowLayoutPanel3.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)PictureCarta_uno).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureCarta_dos).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureCarta_tres).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureCarta_cuatro).EndInit();
-            groupBox1.ResumeLayout(false);
-            groupBox1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureCartaOponente_uno).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureCartaOponente_dos).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureCartaOponente_tres).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureCartaOponente_cuatro).EndInit();
+            datosOponente.ResumeLayout(false);
+            datosOponente.PerformLayout();
             ResumeLayout(false);
         }
 
@@ -304,26 +349,30 @@
 
         private GroupBox grupoDatosusuario;
         private FlowLayoutPanel layoutCarta;
-        private PictureBox pictureBox1;
-        private PictureBox pictureBox2;
-        private PictureBox pictureBox3;
-        private PictureBox pictureBox4;
-        private FlowLayoutPanel flowLayoutPanel1;
-        private PictureBox pictureBox5;
-        private FlowLayoutPanel layputCampoBatalla;
-        private FlowLayoutPanel flowLayoutPanel2;
+        private PictureBox pictureCartausuario_Uno;
+        private PictureBox pictureCartausuario_dos;
+        private PictureBox pictureCartausuario_tres;
+        private PictureBox pictureCartausuario_Cuatro;
+        private FlowLayoutPanel layoutMazo;
+        private PictureBox MazoAtrasUsuario;
+        private FlowLayoutPanel layoutCampoBatalla;
+        private FlowLayoutPanel layutMazoAtrasOponente;
         private PictureBox pictureMazoAtras;
         private FlowLayoutPanel flowLayoutPanel3;
-        private PictureBox PictureCarta_uno;
-        private PictureBox pictureCarta_dos;
-        private PictureBox pictureCarta_tres;
-        private PictureBox pictureCarta_cuatro;
-        private GroupBox groupBox1;
-        private ProgressBar progressBar2;
+        private PictureBox pictureCartaOponente_uno;
+        private PictureBox pictureCartaOponente_dos;
+        private PictureBox pictureCartaOponente_tres;
+        private PictureBox pictureCartaOponente_cuatro;
+        private GroupBox datosOponente;
+        private ProgressBar barraOponenteMana;
         private Label label3;
         private Label labelusuarioNombre;
         private Label label1;
-        private ProgressBar progressBar1;
+        private ProgressBar barraVidaOponente;
         private Label label4;
+        private Label label5;
+        private Label label2;
+        private ProgressBar BarraManaUsuario;
+        private ProgressBar barraVidaUsuario;
     }
 }

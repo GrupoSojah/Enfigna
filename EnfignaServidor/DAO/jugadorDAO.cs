@@ -128,32 +128,36 @@ namespace EnfignaServidor.DAO
 
 
 
-        /*
-        public int recuperarIDUsuario()
+        public int recuperarIDUsuario(Jugador player)
         {
-            conexionBD conexion = new conexionBD();
-            Jugador player = new Jugador();
-            int idUsuario = 0;
+            int idUsuario = -1;
 
-            string recuperarUsuarioQuery = "SELECT idUsuario FROM usuario WHERE usuario = '" + player.usuario + "'";
+            string recuperarUsuarioQuery = "SELECT idUsuario FROM usuario WHERE usuario = @usuario";
 
-            try { 
-                MySqlCommand comandoIdUsuario = new MySqlCommand(recuperarUsuarioQuery, conexion.establecerConexion());
-
-                MySqlDataReader lector = comandoIdUsuario.ExecuteReader();
-
-                if (lector.Read()) {
-                }
-                conexion.cerrarConexion();
-            }
-            catch(Exception ex)
+            using (MySqlConnection connection = conexion.establecerConexion())
             {
-                MessageBox.Show("La verda no funciona, error: "+ ex);
-            }
+                using (MySqlCommand comandoIdUsuario = new MySqlCommand(recuperarUsuarioQuery, connection))
+                {
+                    comandoIdUsuario.Parameters.AddWithValue("@usuario", player.usuario);
 
-            return idUsuario; 
+                    try
+                    {
+                        using (MySqlDataReader lector = comandoIdUsuario.ExecuteReader())
+                        {
+                            if (lector.Read())
+                            {
+                                idUsuario = lector.GetInt32("idUsuario");
+                            }
+                        }
+                    }
+                    catch (MySqlException ex)
+                    {
+                        MessageBox.Show("Ocurrió un error al recuperar el ID del usuario: " + ex, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    }
+                }
+            }
+            return idUsuario;
         }
-        */
 
 
 
