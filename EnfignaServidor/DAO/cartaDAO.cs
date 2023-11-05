@@ -14,8 +14,7 @@ namespace EnfignaServidor.DAO
     {
         conexionBD conexion = new conexionBD();
         
-        //recuperaIdMazos por id de jugador
-
+        //recuperaIdMazos por id de Jugador.
         public ArrayList recuperarMazos(int idJugador)
         {
             ArrayList mazosRecuperados = new ArrayList();
