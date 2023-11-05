@@ -1,43 +1,60 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using MySql.Data.MySqlClient;
 
 namespace EnfignaServidor.DAO
 {
-    internal class conexionBD
+    internal class conexionBD : IDisposable
     {
-        MySqlConnection bdConexion = new MySqlConnection();
-
+        private MySqlConnection bdConexion = new MySqlConnection();
+        private bool disposed = false;
 
         static string servidor = "localhost";
         static string puerto = "3306";
         static string userId = "root";
         static string password = "admin";
-        static string baseDatos = "ejemplo";
+        static string baseDatos = "juegocartas";
 
         string cadenaDeConexion = "server=" + servidor + ";" + "port=" + puerto + ";" +
             "user id=" + userId + ";" + "password=" + password + ";" + "database=" + baseDatos + ";";
 
-        public MySqlConnection establecerConexion(){
-
-            try {
+        public MySqlConnection establecerConexion()
+        {
+            try
+            {
                 bdConexion.ConnectionString = cadenaDeConexion;
                 bdConexion.Open();
-                // MessageBox.Show("Weon malo feo ya esta la bd");
+                // MessageBox.Show("Conexión establecida");
             }
-            catch(MySqlException ex) {
-
-                MessageBox.Show("Weon malo kliao hiciste la conexion mal:" + ex.ToString());
+            catch (MySqlException ex)
+            {
+                 MessageBox.Show("Error al establecer la conexión: " + ex.ToString());
             }
 
             return bdConexion;
         }
 
-        public void cerrarConexion() {
+        public void cerrarConexion()
+        {
             bdConexion.Close();
+        }
+
+        public void Dispose()
+        {
+            Dispose(true);
+            GC.SuppressFinalize(this);
+        }
+
+        protected virtual void Dispose(bool disposing)
+        {
+            if (!disposed)
+            {
+                if (disposing)
+                {
+                    // Liberar recursos no administrados aquí, por ejemplo, cerrar la conexión.
+                    cerrarConexion();
+                }
+                disposed = true;
+            }
         }
     }
 }

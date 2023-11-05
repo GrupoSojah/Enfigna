@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
+
 namespace EnfignaServidor.Vistas
 {
     public partial class modalidad : Form
@@ -15,6 +16,24 @@ namespace EnfignaServidor.Vistas
         public modalidad()
         {
             InitializeComponent();
+        }
+
+        private void button_Crear_Click(object sender, EventArgs e)
+        {
+            crearSala pantallaCrearSala = new crearSala();
+
+            pantallaCrearSala.Show();
+
+            this.Close();
+        }
+
+        private void button_Unirse_Click(object sender, EventArgs e)
+        {
+            UnirseAsala pantallaUnirseAsala = new UnirseAsala();
+
+            pantallaUnirseAsala.Show();
+
+            this.Close();
         }
     }
 }

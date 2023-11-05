@@ -56,45 +56,46 @@
             // 
             groupBox1.Controls.Add(buttonModificar);
             groupBox1.Controls.Add(buttonCrearCuenta);
-            groupBox1.Location = new Point(727, 85);
-            groupBox1.Margin = new Padding(3, 4, 3, 4);
+            groupBox1.Location = new Point(909, 106);
+            groupBox1.Margin = new Padding(4, 5, 4, 5);
             groupBox1.Name = "groupBox1";
-            groupBox1.Padding = new Padding(3, 4, 3, 4);
-            groupBox1.Size = new Size(174, 257);
+            groupBox1.Padding = new Padding(4, 5, 4, 5);
+            groupBox1.Size = new Size(218, 321);
             groupBox1.TabIndex = 0;
             groupBox1.TabStop = false;
             groupBox1.Text = "Botones";
             // 
             // buttonModificar
             // 
-            buttonModificar.Location = new Point(22, 181);
-            buttonModificar.Margin = new Padding(3, 4, 3, 4);
+            buttonModificar.Location = new Point(28, 226);
+            buttonModificar.Margin = new Padding(4, 5, 4, 5);
             buttonModificar.Name = "buttonModificar";
-            buttonModificar.Size = new Size(86, 31);
+            buttonModificar.Size = new Size(108, 39);
             buttonModificar.TabIndex = 1;
             buttonModificar.Text = "Modificar";
             buttonModificar.UseVisualStyleBackColor = true;
             // 
             // buttonCrearCuenta
             // 
-            buttonCrearCuenta.Location = new Point(22, 29);
-            buttonCrearCuenta.Margin = new Padding(3, 4, 3, 4);
+            buttonCrearCuenta.Location = new Point(28, 36);
+            buttonCrearCuenta.Margin = new Padding(4, 5, 4, 5);
             buttonCrearCuenta.Name = "buttonCrearCuenta";
-            buttonCrearCuenta.Size = new Size(121, 31);
+            buttonCrearCuenta.Size = new Size(151, 39);
             buttonCrearCuenta.TabIndex = 0;
             buttonCrearCuenta.Text = "Crear Cuenta";
             buttonCrearCuenta.UseVisualStyleBackColor = true;
-            buttonCrearCuenta.Click += buttonCrearCuenta_Click;
+            //buttonCrearCuenta.Click += buttonCrearCuenta_Click;
             // 
             // buttonEntrarJuego
             // 
-            buttonEntrarJuego.Location = new Point(91, 115);
-            buttonEntrarJuego.Margin = new Padding(3, 4, 3, 4);
+            buttonEntrarJuego.Location = new Point(114, 144);
+            buttonEntrarJuego.Margin = new Padding(4, 5, 4, 5);
             buttonEntrarJuego.Name = "buttonEntrarJuego";
-            buttonEntrarJuego.Size = new Size(86, 31);
+            buttonEntrarJuego.Size = new Size(108, 39);
             buttonEntrarJuego.TabIndex = 2;
             buttonEntrarJuego.Text = "Entrar";
             buttonEntrarJuego.UseVisualStyleBackColor = true;
+            buttonEntrarJuego.Click += buttonEntrarJuego_Click;
             // 
             // groupBox2
             // 
@@ -105,11 +106,11 @@
             groupBox2.Controls.Add(inputUsuario);
             groupBox2.Controls.Add(label2);
             groupBox2.Controls.Add(label1);
-            groupBox2.Location = new Point(26, 16);
-            groupBox2.Margin = new Padding(3, 4, 3, 4);
+            groupBox2.Location = new Point(32, 20);
+            groupBox2.Margin = new Padding(4, 5, 4, 5);
             groupBox2.Name = "groupBox2";
-            groupBox2.Padding = new Padding(3, 4, 3, 4);
-            groupBox2.Size = new Size(434, 201);
+            groupBox2.Padding = new Padding(4, 5, 4, 5);
+            groupBox2.Size = new Size(542, 251);
             groupBox2.TabIndex = 1;
             groupBox2.TabStop = false;
             groupBox2.Text = "groupBox2";
@@ -117,112 +118,116 @@
             // label3
             // 
             label3.AutoSize = true;
-            label3.Location = new Point(237, 29);
+            label3.Location = new Point(296, 36);
+            label3.Margin = new Padding(4, 0, 4, 0);
             label3.Name = "label3";
-            label3.Size = new Size(53, 20);
+            label3.Size = new Size(64, 25);
             label3.TabIndex = 5;
             label3.Text = "Modifi";
             // 
             // inputModificar
             // 
-            inputModificar.Location = new Point(296, 25);
-            inputModificar.Margin = new Padding(3, 4, 3, 4);
+            inputModificar.Location = new Point(370, 31);
+            inputModificar.Margin = new Padding(4, 5, 4, 5);
             inputModificar.Name = "inputModificar";
-            inputModificar.Size = new Size(114, 27);
+            inputModificar.Size = new Size(142, 31);
             inputModificar.TabIndex = 4;
             // 
             // inputPassword
             // 
-            inputPassword.Location = new Point(75, 69);
-            inputPassword.Margin = new Padding(3, 4, 3, 4);
+            inputPassword.Location = new Point(94, 86);
+            inputPassword.Margin = new Padding(4, 5, 4, 5);
             inputPassword.Name = "inputPassword";
-            inputPassword.Size = new Size(114, 27);
+            inputPassword.Size = new Size(142, 31);
             inputPassword.TabIndex = 3;
             // 
             // inputUsuario
             // 
-            inputUsuario.Location = new Point(75, 21);
-            inputUsuario.Margin = new Padding(3, 4, 3, 4);
+            inputUsuario.Location = new Point(94, 26);
+            inputUsuario.Margin = new Padding(4, 5, 4, 5);
             inputUsuario.Name = "inputUsuario";
-            inputUsuario.Size = new Size(114, 27);
+            inputUsuario.Size = new Size(142, 31);
             inputUsuario.TabIndex = 2;
             // 
             // label2
             // 
             label2.AutoSize = true;
-            label2.Location = new Point(3, 69);
+            label2.Location = new Point(4, 86);
+            label2.Margin = new Padding(4, 0, 4, 0);
             label2.Name = "label2";
-            label2.Size = new Size(70, 20);
+            label2.Size = new Size(87, 25);
             label2.TabIndex = 1;
             label2.Text = "Password";
             // 
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(3, 25);
+            label1.Location = new Point(4, 31);
+            label1.Margin = new Padding(4, 0, 4, 0);
             label1.Name = "label1";
-            label1.Size = new Size(57, 20);
+            label1.Size = new Size(70, 25);
             label1.TabIndex = 0;
             label1.Text = "usuario";
             // 
             // dgvUsuarios
             // 
             dgvUsuarios.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dgvUsuarios.Location = new Point(596, 364);
-            dgvUsuarios.Margin = new Padding(3, 4, 3, 4);
+            dgvUsuarios.Location = new Point(745, 455);
+            dgvUsuarios.Margin = new Padding(4, 5, 4, 5);
             dgvUsuarios.Name = "dgvUsuarios";
             dgvUsuarios.RowHeadersWidth = 51;
             dgvUsuarios.RowTemplate.Height = 25;
-            dgvUsuarios.Size = new Size(274, 200);
+            dgvUsuarios.Size = new Size(342, 250);
             dgvUsuarios.TabIndex = 4;
-            dgvUsuarios.CellContentClick += dgvUsuarios_CellContentClick;
+            //dgvUsuarios.CellContentClick += dgvUsuarios_CellContentClick;
             // 
             // layoutImagens
             // 
             layoutImagens.Controls.Add(pictureBox1);
             layoutImagens.Controls.Add(pictureBox2);
             layoutImagens.Controls.Add(flowLayoutPanel1);
-            layoutImagens.Location = new Point(30, 301);
-            layoutImagens.Margin = new Padding(3, 4, 3, 4);
+            layoutImagens.Location = new Point(38, 376);
+            layoutImagens.Margin = new Padding(4, 5, 4, 5);
             layoutImagens.Name = "layoutImagens";
-            layoutImagens.Size = new Size(353, 224);
+            layoutImagens.Size = new Size(441, 280);
             layoutImagens.TabIndex = 5;
             // 
             // pictureBox1
             // 
-            pictureBox1.Location = new Point(3, 4);
-            pictureBox1.Margin = new Padding(3, 4, 3, 4);
+            pictureBox1.Location = new Point(4, 5);
+            pictureBox1.Margin = new Padding(4, 5, 4, 5);
             pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(176, 197);
+            pictureBox1.Size = new Size(220, 246);
             pictureBox1.TabIndex = 0;
             pictureBox1.TabStop = false;
             // 
             // pictureBox2
             // 
-            pictureBox2.Location = new Point(185, 4);
-            pictureBox2.Margin = new Padding(3, 4, 3, 4);
+            pictureBox2.Location = new Point(232, 5);
+            pictureBox2.Margin = new Padding(4, 5, 4, 5);
             pictureBox2.Name = "pictureBox2";
-            pictureBox2.Size = new Size(157, 197);
+            pictureBox2.Size = new Size(196, 246);
             pictureBox2.TabIndex = 1;
             pictureBox2.TabStop = false;
             // 
             // flowLayoutPanel1
             // 
-            flowLayoutPanel1.Location = new Point(3, 208);
+            flowLayoutPanel1.Location = new Point(4, 260);
+            flowLayoutPanel1.Margin = new Padding(4, 4, 4, 4);
             flowLayoutPanel1.Name = "flowLayoutPanel1";
-            flowLayoutPanel1.Size = new Size(8, 8);
+            flowLayoutPanel1.Size = new Size(10, 10);
             flowLayoutPanel1.TabIndex = 2;
             // 
             // registro
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(914, 600);
+            ClientSize = new Size(1142, 750);
             Controls.Add(layoutImagens);
             Controls.Add(dgvUsuarios);
             Controls.Add(groupBox2);
             Controls.Add(groupBox1);
-            Margin = new Padding(3, 4, 3, 4);
+            Margin = new Padding(4, 5, 4, 5);
             Name = "registro";
             Text = "registroPantalla";
             groupBox1.ResumeLayout(false);
@@ -242,8 +247,8 @@
         private Button buttonModificar;
         private Button buttonCrearCuenta;
         private GroupBox groupBox2;
-        private TextBox inputPassword;
-        private TextBox inputUsuario;
+        public TextBox inputPassword;
+        public TextBox inputUsuario;
         private Label label2;
         private Label label1;
         private Label label3;

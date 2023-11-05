@@ -31,6 +31,7 @@
             button_Unirse = new Button();
             button_Crear = new Button();
             button_Atras = new Button();
+            labelUsuario = new Label();
             SuspendLayout();
             // 
             // button_Unirse
@@ -39,11 +40,13 @@
             button_Unirse.BackgroundImageLayout = ImageLayout.Stretch;
             button_Unirse.FlatAppearance.BorderSize = 0;
             button_Unirse.FlatStyle = FlatStyle.Flat;
-            button_Unirse.Location = new Point(746, 387);
+            button_Unirse.Location = new Point(932, 484);
+            button_Unirse.Margin = new Padding(4);
             button_Unirse.Name = "button_Unirse";
-            button_Unirse.Size = new Size(223, 65);
+            button_Unirse.Size = new Size(279, 81);
             button_Unirse.TabIndex = 0;
             button_Unirse.UseVisualStyleBackColor = true;
+            button_Unirse.Click += button_Unirse_Click;
             // 
             // button_Crear
             // 
@@ -51,11 +54,13 @@
             button_Crear.BackgroundImageLayout = ImageLayout.Stretch;
             button_Crear.FlatAppearance.BorderSize = 0;
             button_Crear.FlatStyle = FlatStyle.Flat;
-            button_Crear.Location = new Point(192, 387);
+            button_Crear.Location = new Point(240, 484);
+            button_Crear.Margin = new Padding(4);
             button_Crear.Name = "button_Crear";
-            button_Crear.Size = new Size(209, 65);
+            button_Crear.Size = new Size(261, 81);
             button_Crear.TabIndex = 1;
             button_Crear.UseVisualStyleBackColor = true;
+            button_Crear.Click += button_Crear_Click;
             // 
             // button_Atras
             // 
@@ -63,26 +68,39 @@
             button_Atras.BackgroundImageLayout = ImageLayout.Stretch;
             button_Atras.FlatAppearance.BorderSize = 0;
             button_Atras.FlatStyle = FlatStyle.Flat;
-            button_Atras.Location = new Point(21, 23);
+            button_Atras.Location = new Point(26, 29);
+            button_Atras.Margin = new Padding(4);
             button_Atras.Name = "button_Atras";
-            button_Atras.Size = new Size(129, 61);
+            button_Atras.Size = new Size(161, 76);
             button_Atras.TabIndex = 2;
             button_Atras.UseVisualStyleBackColor = true;
             // 
+            // labelUsuario
+            // 
+            labelUsuario.AutoSize = true;
+            labelUsuario.Location = new Point(1286, 32);
+            labelUsuario.Name = "labelUsuario";
+            labelUsuario.Size = new Size(59, 25);
+            labelUsuario.TabIndex = 3;
+            labelUsuario.Text = "label1";
+            // 
             // modalidad
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
             BackgroundImage = Properties.Resources.fondo_modalidad;
             BackgroundImageLayout = ImageLayout.Stretch;
-            ClientSize = new Size(1151, 597);
+            ClientSize = new Size(1439, 746);
+            Controls.Add(labelUsuario);
             Controls.Add(button_Atras);
             Controls.Add(button_Crear);
             Controls.Add(button_Unirse);
             DoubleBuffered = true;
+            Margin = new Padding(4);
             Name = "modalidad";
             Text = "modalidad";
             ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
@@ -90,5 +108,6 @@
         private Button button_Unirse;
         private Button button_Crear;
         private Button button_Atras;
+        private Label labelUsuario;
     }
 }

@@ -10,18 +10,14 @@ namespace EnfignaServidor.DAO
 {
     internal class cartaDAO
     {
-        /*FUNCIONA?????? */
-        public Carta cartasObtenidas = new Carta();
-
-        public List<Carta> recuperarCartas() { 
+        /*
+        public List<Carta> recuperarCartasCriaturaDelJugador() { 
             
             List<Carta> cartasRecuperadas = new List<Carta> ();
 
             conexionBD conexion = new conexionBD();
 
             jugadorDAO player = new jugadorDAO();
-
-
 
             string recuperarCartasQuery = "SELECT idCarta FROM Carta Where idUsuario = '" 
                 + player.recuperarIDUsuario() + "'";
@@ -51,5 +47,6 @@ namespace EnfignaServidor.DAO
 
             return cartasRecuperadas;
         }
+        */
     }
 }

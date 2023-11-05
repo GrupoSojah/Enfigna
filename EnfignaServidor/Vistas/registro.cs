@@ -1,4 +1,6 @@
-﻿using System;
+﻿using EnfignaServidor.DAO;
+using EnfignaServidor.Modelo;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -12,27 +14,54 @@ namespace EnfignaServidor.Vistas
 {
     public partial class registro : Form
     {
+
         public registro()
         {
             InitializeComponent();
-            DAO.jugadorDAO mostrar = new DAO.jugadorDAO();
+            /*
+            jugadorDAO mostrar = new jugadorDAO(conexion);
 
             mostrar.mostrarUsuarios(dgvUsuarios);
+            */
         }
 
-        private void buttonCrearCuenta_Click(object sender, EventArgs e)
-        {
-            DAO.jugadorDAO insertaJugador = new DAO.jugadorDAO();
-            int halo = 1500;
 
-            insertaJugador.CrearCuenta(inputUsuario, inputPassword, halo);
-
-
-        }
-
-        private void dgvUsuarios_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        private void buttonEntrarJuego_Click(object sender, EventArgs e)
         {
 
+            using (conexionBD conexion = new conexionBD())
+            {
+                jugadorDAO daoDeJugador = new jugadorDAO(conexion);
+
+                if (daoDeJugador.entrarJuego(inputUsuario, inputPassword))
+                {
+                    Jugador usuario = daoDeJugador.recuperarDatosdelUsuario();
+
+                    menuPrincipal menu = new menuPrincipal(usuario);
+                    menu.Show();
+
+                    this.Close();
+                }
+                else
+                {
+                    MessageBox.Show("No se pudo iniciar sesión");
+                }
+            }
         }
     }
 }
+
+        /*
+       private void buttonCrearCuenta_Click(object sender, EventArgs e)
+       {
+           jugadorDAO insertaJugador = new jugadorDAO(conexion);
+           int halo = 1500;
+
+           insertaJugador.CrearCuenta(inputUsuario, inputPassword, halo);
+       }
+
+       private void dgvUsuarios_CellContentClick(object sender, DataGridViewCellEventArgs e)
+       {
+
+       }
+       */
