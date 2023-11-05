@@ -130,6 +130,9 @@
   <data name="fondo_crealSala2" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\fondo_crealSala2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="pantalla_batalla" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\pantalla_batalla.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="boton_play" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\boton_play.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -159,6 +162,9 @@
   </data>
   <data name="boton_tienda" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\boton_tienda.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="fondo_Tienda1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\fondo_Tienda1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="boton_Atras(modalidad)" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\boton_Atras(modalidad).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -205,7 +211,7 @@
   <data name="Captura de pantalla 2023-10-29 141743" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Captura de pantalla 2023-10-29 141743.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="fondo_Tienda1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\fondo_Tienda1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="pantalla_batalla1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\pantalla_batalla1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

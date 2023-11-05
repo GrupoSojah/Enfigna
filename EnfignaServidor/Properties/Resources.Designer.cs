@@ -343,6 +343,26 @@ namespace EnfignaServidor.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap pantalla_batalla {
+            get {
+                object obj = ResourceManager.GetObject("pantalla_batalla", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap pantalla_batalla1 {
+            get {
+                object obj = ResourceManager.GetObject("pantalla_batalla1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap pantalla_Registro {
             get {
                 object obj = ResourceManager.GetObject("pantalla_Registro", resourceCulture);

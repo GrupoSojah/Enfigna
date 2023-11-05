@@ -43,7 +43,7 @@
             button_CrearSala.BackgroundImageLayout = ImageLayout.Stretch;
             button_CrearSala.FlatAppearance.BorderSize = 0;
             button_CrearSala.FlatStyle = FlatStyle.Flat;
-            button_CrearSala.Location = new Point(402, 557);
+            button_CrearSala.Location = new Point(402, 556);
             button_CrearSala.Name = "button_CrearSala";
             button_CrearSala.Size = new Size(262, 92);
             button_CrearSala.TabIndex = 0;
