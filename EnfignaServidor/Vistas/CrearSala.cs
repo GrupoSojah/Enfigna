@@ -26,11 +26,12 @@ namespace EnfignaServidor.Vistas
 
         private void buttonCrearSala_Click(object sender, EventArgs e)
         {
+            
             //jugadorDAO jugadorCreador = new jugadorDAO();
 
 
             //jugadorCreador.CrearSala(textBoxNombreSala, textBoxContaseña);
-            
+
         }
 
         private void checkBox_privada_CheckedChanged(object sender, EventArgs e)
@@ -39,10 +40,16 @@ namespace EnfignaServidor.Vistas
             {
                 textBoxContaseña.Visible = true;
             }
-            else {
+            else
+            {
                 textBoxContaseña.Visible = false;
                 textBoxContaseña.Text = "";
             }
+        }
+
+        private void textBoxNombreSala_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

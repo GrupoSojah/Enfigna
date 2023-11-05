@@ -16,8 +16,8 @@ namespace EnfignaServidor.Vistas
     {
    
         static conexionBD conexion = new conexionBD();
-        Jugador usuarioActual = new Jugador();
         jugadorDAO DAOdeJugador = new jugadorDAO(conexion);
+        private Jugador usuarioActual;
 
 
         public menuPrincipal(Jugador usuario)
@@ -25,11 +25,9 @@ namespace EnfignaServidor.Vistas
             InitializeComponent();
             this.usuarioActual = usuario;
 
-            usuarioActual = DAOdeJugador.recuperarDatosdelUsuario();
-
-            labelusuario.Text = usuarioActual.usuario;
-            labelDinero.Text = usuarioActual.dinero.ToString();
-            labelHalo.Text = usuarioActual.halo.ToString() ;
+            labelusuario.Text = this.usuarioActual.usuario;
+            labelDinero.Text = this.usuarioActual.dinero.ToString();
+            labelHalo.Text = this.usuarioActual.halo.ToString() ;
         }
 
         private void button_mazo_Click(object sender, EventArgs e)
@@ -48,10 +46,9 @@ namespace EnfignaServidor.Vistas
 
         private void button_play_Click(object sender, EventArgs e)
         {
-            modalidad pantallSeleccionarModo = new modalidad();
+            modalidad pantallSeleccionarModo = new modalidad(usuarioActual);
 
             pantallSeleccionarModo.Show();
-
             this.Close();
         }
     }

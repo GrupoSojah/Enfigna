@@ -1,4 +1,5 @@
-﻿using System;
+﻿using EnfignaServidor.Modelo;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -13,9 +14,13 @@ namespace EnfignaServidor.Vistas
 {
     public partial class modalidad : Form
     {
-        public modalidad()
+        private Jugador usuarioActual;
+        public modalidad(Jugador usuario)
         {
             InitializeComponent();
+            this.usuarioActual = usuario;
+
+            labelUsuario.Text = usuario.usuario.ToString();
         }
 
         private void button_Crear_Click(object sender, EventArgs e)

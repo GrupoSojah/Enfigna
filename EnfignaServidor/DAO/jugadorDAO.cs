@@ -88,41 +88,44 @@ namespace EnfignaServidor.DAO
             }
         }
 
-        /*
-        public void CrearSala(TextBox nombreSala,TextBox contraseña) {
-            Jugador usuario = new Jugador();
-            crearSala sala = new crearSala();
 
-            string crearSalaQuery = "";
+        public bool CrearSala(TextBox nombreSala,TextBox contraseña,Jugador usuario) {
+
+            bool insertaSala = false;
+
+                string crearSalaQuery = "";
 
             if (contraseña.Text == "") {
                 crearSalaQuery = "INSERT INTO partida (usuarioCreador, Nombrepartida, tipoPartida)" +
-                "VALUES ('" + usuario.usuario + "', '" + nombreSala.Text + "','" + "Publica" + "')";
+                "VALUES (@usuario, @nombresala, @contraseña, @tipoPartida)";
             } else { 
                 crearSalaQuery = "INSERT INTO partida (usuarioCreador, Nombrepartida,Contraseñapartida, tipoPartida)" +
-                "VALUES ('" + usuario.usuario + "','"+contraseña.Text+"', '" + nombreSala.Text + "','" + "Privada" + "')";
+                "VALUES (@usuario, @nombresala, @contraseña, @tipoPartida)";
             }
 
-            try {
+            using (MySqlConnection connection = conexion.establecerConexion()) {
+                using (MySqlCommand comandoCrearSala = new MySqlCommand(crearSalaQuery, connection)) {
 
-                MySqlCommand comandoCrearSala = new MySqlCommand(crearSalaQuery, conexion.establecerConexion());
+                    comandoCrearSala.Parameters.AddWithValue("@usuario", usuario.usuario);
+                    comandoCrearSala.Parameters.AddWithValue("@nombresala", nombreSala.Text);
+                    comandoCrearSala.Parameters.AddWithValue("@tipoPartida", contraseña.Text == "" ? "Publica" : "Privada");
+                    if (contraseña.Text != "") {
+                        comandoCrearSala.Parameters.AddWithValue("@contraseña", contraseña.Text);
+                    }
 
-                MySqlDataReader lector = comandoCrearSala.ExecuteReader();
-
-                if (lector.Read())
-                {
-                    idUsuario = lector.GetInt32("idUsuario");
+                    try {
+                       comandoCrearSala.ExecuteNonQuery();
+                        insertaSala = true;
+                    }
+                    catch (MySqlException ex) {
+                        MessageBox.Show("No se pudo insertar Correctamente en la base de datos, error: " + ex);
+                    
+                    }
                 }
-
-                conexion.cerrarConexion();
             }
-            catch (Exception ex) {
-                MessageBox.Show("No se creo la sala, error:" + ex);
-
-            }
+            return insertaSala;
         }
 
-       */
 
 
         /*

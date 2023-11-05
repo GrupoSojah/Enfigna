@@ -42,10 +42,10 @@
             button_CrearSala.BackgroundImageLayout = ImageLayout.Stretch;
             button_CrearSala.FlatAppearance.BorderSize = 0;
             button_CrearSala.FlatStyle = FlatStyle.Flat;
-            button_CrearSala.Location = new Point(631, 720);
-            button_CrearSala.Margin = new Padding(4);
+            button_CrearSala.Location = new Point(352, 418);
+            button_CrearSala.Margin = new Padding(3, 2, 3, 2);
             button_CrearSala.Name = "button_CrearSala";
-            button_CrearSala.Size = new Size(330, 79);
+            button_CrearSala.Size = new Size(229, 69);
             button_CrearSala.TabIndex = 0;
             button_CrearSala.UseVisualStyleBackColor = true;
             button_CrearSala.Click += buttonCrearSala_Click;
@@ -56,33 +56,34 @@
             button_atras.BackgroundImageLayout = ImageLayout.Stretch;
             button_atras.FlatAppearance.BorderSize = 0;
             button_atras.FlatStyle = FlatStyle.Flat;
-            button_atras.Location = new Point(40, 20);
-            button_atras.Margin = new Padding(4);
+            button_atras.Location = new Point(28, 12);
+            button_atras.Margin = new Padding(3, 2, 3, 2);
             button_atras.Name = "button_atras";
-            button_atras.Size = new Size(168, 88);
+            button_atras.Size = new Size(118, 53);
             button_atras.TabIndex = 2;
             button_atras.UseVisualStyleBackColor = true;
             // 
             // textBoxNombreSala
             // 
             textBoxNombreSala.BackColor = Color.FromArgb(255, 128, 0);
-            textBoxNombreSala.Font = new Font("Showcard Gothic", 18F, FontStyle.Regular, GraphicsUnit.Point);
-            textBoxNombreSala.Location = new Point(610, 356);
-            textBoxNombreSala.Margin = new Padding(4);
-            textBoxNombreSala.MaximumSize = new Size(1124, 300);
-            textBoxNombreSala.MinimumSize = new Size(249, 60);
+            textBoxNombreSala.Font = new Font("Microsoft Sans Serif", 18F, FontStyle.Regular, GraphicsUnit.Point);
+            textBoxNombreSala.Location = new Point(352, 206);
+            textBoxNombreSala.Margin = new Padding(3, 2, 3, 2);
+            textBoxNombreSala.MaximumSize = new Size(788, 300);
+            textBoxNombreSala.MinimumSize = new Size(176, 60);
             textBoxNombreSala.Name = "textBoxNombreSala";
-            textBoxNombreSala.Size = new Size(363, 60);
+            textBoxNombreSala.Size = new Size(255, 60);
             textBoxNombreSala.TabIndex = 3;
+            textBoxNombreSala.TextChanged += textBoxNombreSala_TextChanged;
             // 
             // checkBox_privada
             // 
             checkBox_privada.AutoSize = true;
             checkBox_privada.BackColor = Color.Transparent;
-            checkBox_privada.Location = new Point(453, 502);
-            checkBox_privada.Margin = new Padding(4);
+            checkBox_privada.Location = new Point(269, 301);
+            checkBox_privada.Margin = new Padding(3, 2, 3, 2);
             checkBox_privada.Name = "checkBox_privada";
-            checkBox_privada.Size = new Size(22, 21);
+            checkBox_privada.Size = new Size(15, 14);
             checkBox_privada.TabIndex = 4;
             checkBox_privada.UseVisualStyleBackColor = false;
             checkBox_privada.CheckedChanged += checkBox_privada_CheckedChanged;
@@ -91,27 +92,28 @@
             // 
             checkBox_Publica.AutoSize = true;
             checkBox_Publica.BackColor = Color.Transparent;
-            checkBox_Publica.Location = new Point(839, 502);
-            checkBox_Publica.Margin = new Padding(4);
+            checkBox_Publica.Location = new Point(498, 301);
+            checkBox_Publica.Margin = new Padding(3, 2, 3, 2);
             checkBox_Publica.Name = "checkBox_Publica";
-            checkBox_Publica.Size = new Size(22, 21);
+            checkBox_Publica.Size = new Size(15, 14);
             checkBox_Publica.TabIndex = 5;
             checkBox_Publica.UseVisualStyleBackColor = false;
             // 
             // textBoxContaseña
             // 
-            textBoxContaseña.Location = new Point(610, 566);
+            textBoxContaseña.Location = new Point(391, 344);
+            textBoxContaseña.Margin = new Padding(2, 2, 2, 2);
             textBoxContaseña.Name = "textBoxContaseña";
-            textBoxContaseña.Size = new Size(150, 31);
+            textBoxContaseña.Size = new Size(106, 23);
             textBoxContaseña.TabIndex = 6;
             // 
             // crearSala
             // 
-            AutoScaleDimensions = new SizeF(10F, 25F);
+            AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackgroundImage = Properties.Resources.fondo_crealSala2;
             BackgroundImageLayout = ImageLayout.Stretch;
-            ClientSize = new Size(1632, 886);
+            ClientSize = new Size(955, 526);
             Controls.Add(textBoxContaseña);
             Controls.Add(checkBox_Publica);
             Controls.Add(checkBox_privada);
@@ -119,7 +121,7 @@
             Controls.Add(button_atras);
             Controls.Add(button_CrearSala);
             DoubleBuffered = true;
-            Margin = new Padding(4);
+            Margin = new Padding(3, 2, 3, 2);
             Name = "crearSala";
             Text = "CrearSala";
             Load += buton_CrearSala_Load;

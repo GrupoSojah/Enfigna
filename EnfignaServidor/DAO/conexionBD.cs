@@ -25,6 +25,7 @@ namespace EnfignaServidor.DAO
                 bdConexion.Open();
                 // MessageBox.Show("Conexión establecida");
             }
+
             catch (MySqlException ex)
             {
                  MessageBox.Show("Error al establecer la conexión: " + ex.ToString());
