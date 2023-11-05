@@ -23,15 +23,15 @@ namespace EnfignaServidor.Modelo
             switch (efecto) {
                 case 1:
                     //Daño Oponente;
-                    a = 20;
+                    a = 2;
                     break;
                 case 2:
                     //Subir estadistica.
-                    a = 20;
+                    a = 2;
                     break;
                 case 3:
                     //Curarse
-                    a = 30;
+                    a = 3;
                     break;
             }
             return a;

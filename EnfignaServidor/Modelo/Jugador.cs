@@ -13,6 +13,8 @@ namespace EnfignaServidor.Modelo
         public string usuario;
         public int dinero;
         public int halo;
+        public int mana;
+        public int vida; 
 
         ArrayList Mazo = new ArrayList();
         ArrayList manoPropia = new ArrayList();
@@ -22,14 +24,43 @@ namespace EnfignaServidor.Modelo
 
         }
 
-        public Jugador(string usuario, int dinero, int halo, ArrayList mazo, ArrayList ManoPropia)
+        public Jugador(string usuario, int dinero, int halo, ArrayList mazo, ArrayList ManoPropia, int mana, int vida)
         {
             this.usuario = usuario;
             this.dinero = dinero;
+            this.vida = vida;
             this.halo = halo;
             this.Mazo = mazo;
             this.manoPropia = ManoPropia;
+            this.mana = mana;
         }
+
+
+
+        public void repartirManoInicial() {
+
+            for (int i = 0; i < 5; i++)
+            {
+                manoPropia.Add(Mazo[i]);
+                Mazo.RemoveAt(i);
+            }
+        
+        }
+
+        public void repartirMano() {
+            manoPropia.Add(Mazo[0]);
+            Mazo.RemoveAt(0);
+        }
+
+        public void RecivirDaño(int daño) {
+            vida -= daño;
+        }
+
+        public void RegenerarMana() {
+            mana++;
+        
+        }
+
 
         public void mezclarMazo()
         {
